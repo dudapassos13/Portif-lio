@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/profile1.png" type="image/x-icon">
+
+    <title>Portifólio</title>
+</head>
+<body>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Maria Eduarda Cunha Passos</p>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projetos</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contato</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Duda Passos</span>
+            </div>
+            <div class="featured-name">
+                <p>Eu sou <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p>Olá! Sou Duda Passos, estudante de Ciência da Computação apaixonada por
+                    desenvolvimento de jogos e tecnologia.
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Contrate-me</button>
+            </div>
+            <div class="social_icons">
+                <div class="icon">
+                    <a href="https://www.instagram.com/_dudac1_/" target="_blank">
+                        <i class="uil uil-instagram"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://www.linkedin.com/in/maria-eduarda-c-passos-0aa2b1333/" target="_blank">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+                <div class="icon">
+                    <a href="https://github.com/dudapassos13" target="_blank">
+                        <i class="uil uil-github-alt"></i>
+                    </a>
+                </div>
+                
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="image/foto.jpg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Scroll</p>
+            </a>
+          </div>
+
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>Sobre mim</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>Minha introdução</h3>
+                    <p>Tenho experiência em programação
+                        front-end. Minha paixão por aprender e resolver problemas, combinada
+                  com minha formação e habilidades técnicas, me permite contribuir
+                         significativamente para projetos inovadores. Desenvolvi alguns mini jogos utilizando JavaScript, HTML e
+                         CSS, e estou interessada em criar mais jogos nesta linguagem.
+                         Além disso, estou continuando meus estudos em front-end e querendo aprimorar outras linguagens
+                         . Estou sempre em busca de coisas novas
+                         desafios que podem expandir meu conhecimento e me permitir aplicar minhas habilidades
+                         habilidades de forma prática e eficiente.
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>Python</span>
+                    </div>
+            </div>
+          </div>
+       </section>
+
+       <!-- -------------- PROJECT BOX ---------------- -->
+
+       <section class="section" id="projects">
+        <div class="top-header">
+            <h1>Projetos</h1>
+        </div>
+        <div class="project-container">
+          
+            <div class="project-box">
+                <img src="image/images.jpg" alt="Jogo de advinhação">
+                <i class='bx bx-joystick'></i>
+                <p>É um jogo onde o usuário tem 5 tentativas para  advinhar um número entre 1 a 100, caso ele coloque um número e erre,
+                     o jogo irá mostrar se o número oculto é maior ou menor que o número que o usuário botou.</p>     
+                     <a href="Número oculto/index.html" target="_blank" class="btn btn-primary">Ver Projeto</a>
+       
+            </div>
+            <div class="project-box">
+                <img src="image/image calculadora.jpg" alt="Calculadora">
+                <i class='bx bx-joystick'></i>
+                <p>Esse projeto é uma calculadora completa desenvolvida em html, css e javascript. </p>
+                <a href="Calculadora/index.html" target="_blank" class="btn btn-primary">Ver Projeto</a>
+            </div>
+            <div class="project-box">
+                <img src="image/lista de tarefas.jpg" alt="Lista de tarefas">
+                <i class='bx bx-joystick'></i>
+                <p>Esse projeto é uma lista de tarefas, onde o usuário pode adicionar ou remover suas tarefas. </p>
+                <a href="Lista de tarefas/index.html" target="_blank" class="btn btn-primary">Ver Projeto</a>
+            </div>
+          
+        </div>
+    </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+
+       <section class="section" id="contact">
+        <div class="top-header">
+            <h1>Entre em contato</h1>
+            <span>Você tem um projeto em mente, entre em contato comigo aqui</span>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="contact-info">
+                    <h2>Encontre-me <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: maria.ecpassos@souunit.com.br</p>
+                    <p><i class="uil uil-phone"></i> Tel: +55 79998447982</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-control">
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" name="name" placeholder="Name" required>
+                            <input type="email" class="input-field" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="text-area">
+                            <textarea name="message" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit" onclick="showConfirmation()" class="btn">Send Message</button>
+                        </div>
+                        <input type="hidden" name="accessKey" value="4c019aec-1b77-4fac-9b38-331b0e9b9f05">
+                        <input type="hidden" name="redirectTo" value="https://miguells10.github.io/Portfolio-2/index.html">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    </main>
+
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p>Duda Passos</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon">
+                <a href="https://www.instagram.com/_dudac1_/" target="_blank">
+                    <i class="uil uil-instagram"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://www.linkedin.com/in/maria-eduarda-c-passos-0aa2b1333/" target="_blank">
+                    <i class="uil uil-linkedin-alt"></i>
+                </a>
+            </div>
+            <div class="icon">
+                <a href="https://github.com/dudapassos13" target="_blank">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="main.js"></script>
+</body>
+</html>

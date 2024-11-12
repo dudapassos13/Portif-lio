@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Kanban de Tarefas</h1>
+        <input type="text" id="taskInput" placeholder="Adicione uma nova tarefa">
+        <button id="addTaskBtn">Adicionar Tarefa</button>
+        <div class="kanban">
+            <div class="kanban-column" id="openColumn">
+                <h2>Em Aberto</h2>
+                <ul id="openTasks" class="task-list"></ul>
+            </div>
+            <div class="kanban-column" id="bidColumn">
+                <h2>Bid (Negociação)</h2>
+                <ul id="bidTasks" class="task-list"></ul>
+            </div>
+            <div class="kanban-column" id="inProgressColumn">
+                <h2>Em Andamento</h2>
+                <ul id="inProgressTasks" class="task-list"></ul>
+            </div>
+            <div class="kanban-column" id="doneColumn">
+                <h2>Entregue</h2>
+                <ul id="doneTasks" class="task-list"></ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

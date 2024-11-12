@@ -210,18 +210,30 @@ nav{
 }
 .social_icons{
     display: flex;
-    margin-top: 5em;
-    gap: 30px;
+    justify-content: left;
+    gap: 15px;
+    padding: 20px;
+    margin-top: 40px;
+
 }
-.icon{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
+.icon-1{
+    margin-right: 10px;
+    padding-left: 7px;
+    width: 30px;              
+    height: 30px;             
+    background-color: #c8d9e4; 
+    border-radius: 50%;  
+  
+
+}
+.icon-2{
+    margin-left: 10px;
+    padding-left: 7px;
+    width: 30px;              
+    height: 30px;             
+    background-color: #c8d9e4; 
+    border-radius: 50%;  
+  
 }
 .icon:hover{
     color: var(--first-color);
@@ -361,6 +373,7 @@ h3{
 }
 
 /* ----- PROJECTS BOX ----- */
+
 .project-container{
     display: flex;
     width: 100%;

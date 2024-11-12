@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-image: url(images/fundo.jpg);
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+  margin-top: 200px;
+  margin-left: 730px;
+}
+
+#restartButton{
+  background-color: rgb(222, 248, 255);
+  margin-left: 730px;
+}
+h1{
+  color: aliceblue;
+  margin-left: 730px;
+}
+p{
+  color: aliceblue;
+  margin-left: 730px;
+}
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(231, 178, 255);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 8px;
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.card img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.card.flipped {
+  transform: rotateY(0);
+}
+
+.card.flipped img {
+  display: block;
+}
+
+#history li {
+  font-size: 16px;
+  color: rgb(210, 252, 252); 
+  margin-left: 700px;
+}

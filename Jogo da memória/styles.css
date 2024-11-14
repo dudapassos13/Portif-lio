@@ -3,6 +3,8 @@ body {
   display: flex;
   flex-direction: column;
   background-image: url(images/fundo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #board {

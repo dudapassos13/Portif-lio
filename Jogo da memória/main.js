@@ -1,18 +1,16 @@
-// Variáveis para o jogo
+
 let board;
 let attempts = 0;
 let selectedCards = [];
 let matchedPairs = 0;
-let history = []; // Armazena o histórico apenas na sessão atual (não usa localStorage)
-
-// Imagens das cartas
+let history = []; 
 const images = [
   "images/card1.png", "images/card1.png",
   "images/card2.png", "images/card2.png",
   "images/card3.jpg", "images/card3.jpg"
 ];
 
-// Função para embaralhar as imagens
+
 function shuffleCards() {
   const shuffledImages = [...images];
   for (let i = shuffledImages.length - 1; i > 0; i--) {
@@ -22,10 +20,10 @@ function shuffleCards() {
   return shuffledImages;
 }
 
-// Função para renderizar o tabuleiro
+
 function renderBoard() {
-  const shuffledImages = shuffleCards(); // Embaralha as imagens
-  board.innerHTML = ""; // Limpa o tabuleiro
+  const shuffledImages = shuffleCards(); 
+  board.innerHTML = ""; 
 
   shuffledImages.forEach((image, index) => {
     const card = document.createElement("div");
@@ -39,9 +37,9 @@ function renderBoard() {
   });
 }
 
-// Função para virar as cartas
+
 function flipCard() {
-  if (selectedCards.length === 2) return; // Impede de virar mais de duas cartas
+  if (selectedCards.length === 2) return;
 
   const card = this;
   card.classList.add("flipped");
@@ -52,7 +50,7 @@ function flipCard() {
   }
 }
 
-// Função para verificar se as cartas viradas formam um par
+
 function checkForMatch() {
   const [card1, card2] = selectedCards;
   const img1 = card1.querySelector("img").src;
@@ -78,18 +76,18 @@ function checkForMatch() {
   }
 }
 
-// Função para salvar o histórico de tentativas
+
 function saveAttempt() {
-  history.push(attempts); // Salva o número de tentativas na sessão atual
-  updateHistory(); // Atualiza o histórico visível na página
+  history.push(attempts); 
+  updateHistory();
 }
 
-// Função para atualizar o histórico de tentativas na interface
+
 function updateHistory() {
   const historyList = document.getElementById("history");
-  historyList.innerHTML = ""; // Limpa o histórico exibido
+  historyList.innerHTML = ""; 
   
-  // Exibe cada tentativa salva durante a sessão atual
+
   history.forEach((attempt, index) => {
     const li = document.createElement("li");
     li.textContent = `Rodada ${index + 1}: ${attempt} tentativas`;
@@ -97,7 +95,7 @@ function updateHistory() {
   });
 }
 
-// Função para reiniciar o jogo
+
 function restartGame() {
   attempts = 0;
   matchedPairs = 0;
@@ -105,16 +103,16 @@ function restartGame() {
   document.getElementById("message").textContent = "";
   document.getElementById("attempts").textContent = `Tentativas: ${attempts}`;
   
-  renderBoard(); // Reinicia o tabuleiro
+  renderBoard();
 }
 
-// Evento de carregamento da página
+
 document.addEventListener("DOMContentLoaded", () => {
   board = document.getElementById("board");
-  renderBoard(); // Renderiza o tabuleiro com as cartas embaralhadas
+  renderBoard();
 
   document.getElementById("restartButton").addEventListener("click", restartGame); // Reinicia o jogo ao clicar no botão
 
-  // Exibe o histórico apenas para a sessão atual
+  
   updateHistory();
 });
